@@ -735,3 +735,58 @@ a {
   pointer-events: none;
   background-color: #ffffff;
 }
+/*form-modal*/
+.form-modal {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 30px;
+}
+.form-lebel-modal {
+  display: flex;
+  align-items: center;
+  width: 22px;
+  height: 14px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2px;
+  letter-spacing: 0.01em;
+  color: #757575;
+  margin-bottom: 4px;
+  margin-left: 41px;
+}
+.input-form-modal {
+  padding-left: 42px;
+  margin-left: 41px;
+  display: block;
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  transition: border 250ms var(--timing-function),
+    box-shadow 250ms var(--timing-function);
+}
+.div-form-modal {
+  position: relative;
+}
+.div-form-modal:hover {
+  border-color: var(--accent-color);
+}
+.icon-form-modal {
+  position: absolute;
+  bottom: 14px;
+  left: 56px;
+}
+.div-form-modal input:focus,
+.div-form-modaltextarea:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.div-form-modal input:focus + .icon-form-modal {
+  fill: var(--accent-color);
+}
