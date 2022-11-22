@@ -695,11 +695,16 @@ a {
   background-color: var(--primary-white-color);
   z-index: 2;
 }
+.data-modal-close:hover,
+.data-modal:hover {
+  fill: #2196f3;
+}
 .data-modal-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
   width: 30px;
   height: 30px;
-  margin-top: 8px;
-  margin-left: 490px;
   border-radius: 50%;
   display: flex;
   align-content: center;
@@ -719,6 +724,9 @@ a {
   background-color: #ffffff;
 }
 /*form-modal*/
+.modal-form {
+  padding: 40px 39px 40px 41px;
+}
 .button-form-modal {
   cursor: pointer;
   padding: 10px 52px;
@@ -737,7 +745,9 @@ a {
   position: absolute;
   margin-left: -407px;
   margin-top: 4px;
+  pointer-events: none;
 }
+
 .checkbox-input {
   display: inline-block;
   appearance: none;
@@ -784,13 +794,23 @@ a {
 .comment > label {
   display: flex;
   align-items: center;
-  margin-left: 41px;
   margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.2;
   letter-spacing: 0.01em;
   color: #757575;
+}
+
+.data-modal:focus {
+  background-color: var(--accent-color);
+}
+.comment:focus,
+.comment > textarea:focus {
+  border-color: #2196f3;
+}
+.comment > textarea:focus {
+  border-color: var(--accent-color);
 }
 .comment > textarea {
   width: 448px;
@@ -803,6 +823,7 @@ a {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
   padding: 12px 16px;
+  resize: none;
 }
 
 .form-modal {
@@ -812,7 +833,7 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 30px;
+  margin-bottom: 8px;
 }
 .form-lebel-modal {
   display: flex;
@@ -825,11 +846,9 @@ a {
   letter-spacing: 0.01em;
   color: #757575;
   margin-bottom: 4px;
-  margin-left: 41px;
 }
 .input-form-modal {
   padding-left: 42px;
-  margin-left: 41px;
   display: block;
   width: 448px;
   height: 40px;
@@ -848,13 +867,8 @@ a {
 }
 .icon-form-modal {
   position: absolute;
-  bottom: 14px;
-  left: 56px;
-}
-.div-form-modal input:focus,
-.div-form-modaltextarea:focus {
-  border-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  bottom: 12px;
+  left: 15px;
 }
 
 .div-form-modal input:focus + .icon-form-modal {
