@@ -507,6 +507,7 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  padding-left: 16px;
 }
 .button-form-footer > svg {
   position: absolute;
@@ -825,6 +826,9 @@ a {
   padding: 12px 16px;
   resize: none;
 }
+.comment > textarea:focus {
+  outline: 1px solid #2196f3;
+}
 
 .form-modal {
   font-weight: 700;
@@ -857,6 +861,9 @@ a {
   outline: none;
   transition: border 250ms var(--timing-function),
     box-shadow 250ms var(--timing-function);
+}
+.input-form-modal:focus {
+  outline: 1px solid #2196f3;
 }
 .div-form-modal {
   position: relative;
